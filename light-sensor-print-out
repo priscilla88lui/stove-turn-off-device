@@ -1,0 +1,11 @@
+int OUT_Pin = A0; // what pin on the arduino is the OUT pin connected to
+
+void setup(){
+Serial.begin(9600);
+Serial.println("Keyes K853518 LDR Module Example Sketch | cactus.io");
+}
+
+void loop(){
+Serial.println(analogRead(OUT_Pin));
+delay(3000);
+}
