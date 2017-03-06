@@ -1,1 +1,17 @@
+int OUT_Pin = A0; // OUT pin of the light sensor
+int STOVE_ON = 700; // Use light-sensor-print-out code to determine the this value
 
+void setup(){
+Serial.begin(9600);
+
+}
+
+void loop(){
+if(analogRead(OUT_Pin) > STOVE_ON){
+  Serial.println("Stove is on");
+  if(analogRead
+}
+else{
+  Serial.println("Stove is off");
+
+}
