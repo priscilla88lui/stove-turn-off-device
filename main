@@ -2,15 +2,22 @@ int OUT_Pin = A0; // OUT pin of the light sensor
 int STOVE_ON = 700; // Use light-sensor-print-out code to determine the this value
 
 void setup(){
-Serial.begin(9600);
+
+  Serial.begin(9600);
+  Serial.println("Warming up...");
+  delay(20000);
 
 }
 
 void loop(){
+
 if(analogRead(OUT_Pin) > STOVE_ON){
   Serial.println("Stove is on");
-  if(analogRead
-}
+  
+  if(digitalRead(2) ???? ){
+    Serial.println(digitalRead(2), DEC);
+    delay(200);
+  }
 else{
   Serial.println("Stove is off");
 
